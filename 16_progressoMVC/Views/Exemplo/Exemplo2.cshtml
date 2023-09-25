@@ -1,0 +1,23 @@
+<div class="text-center">
+<h1>essa é uma pagina de teste 2</h1>
+<button class="btn btn-outline-info"> clique aqui </button>
+@{
+    string nome = "Douglas";
+}
+<h1> Ola, @nome</h1>
+<h1> hoje é @DateTime.Now.ToString("dd/MM/yyyy");</h1>
+
+@{
+    bool mostrarMensagem = true;
+    if (mostrarMensagem == true)
+    {
+        <p>esta é uma mensagem que entrou no if </p>
+    }
+
+    for (int i=1; i <= 10; i++)
+    {
+        int res = i*8;
+        <p>8 x @i = @res</p>
+    }
+}
+</div>
